@@ -107,6 +107,30 @@
     <footer>
         <p>&copy; 2025 Yogita. All rights reserved.</p>
     </footer>
+    <script>
+function openCategory(event, categoryName) {
+    var i, tabcontent, tablinks;
+
+    tabcontent = document.getElementsByClassName("tab-content");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+
+    tablinks = document.getElementsByClassName("tab-link");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+
+    document.getElementById(categoryName).style.display = "block";
+    event.currentTarget.className += " active";
+}
+
+// Show default tab on load
+document.addEventListener("DOMContentLoaded", () => {
+    document.querySelector(".tab-link").click();
+});
+</script>
+
 </body>
 </html>
 
