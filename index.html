@@ -1,68 +1,77 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Yogita's Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-    <!-- Header Section -->
-    <header>
-        <h1>Yogita's Portfolio</h1>
-        <p>Data Analysis + AI + Fashion</p>
-    </header>
+<section id="projects">
+    <h2>Projects</h2>
+    <div class="tabs">
+        <button class="tab-link active" onclick="openCategory(event, 'ai')">AI + Data</button>
+        <button class="tab-link" onclick="openCategory(event, 'supply-chain')">Supply Chain + Retail</button>
+        <button class="tab-link" onclick="openCategory(event, 'fashion')">Fashion + Design</button>
+        <button class="tab-link" onclick="openCategory(event, 'jugaad')">Jugaad + Innovation</button>
+        <button class="tab-link" onclick="openCategory(event, 'erp')">ERP + Quality</button>
+        <button class="tab-link" onclick="openCategory(event, 'merch')">Merchandising + Business</button>
+    </div>
 
-    <!-- About Section -->
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Hello! I'm Yogita, passionate about data analysis, AI, and fashion. 
-        I’m currently working on creating a virtual inspection room for Zudio as part of my graduation project.</p>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects">
-        <h2>Projects</h2>
-        
-        <!-- Project 1 -->
-        <div class="project">
-            <h3>Virtual Inspection Room (Zudio)</h3>
-            <p>Developing a system to track quality inspections at vendor factories using real-time camera data and MES integration.</p>
-            <a href="https://github.com/Yogita/Virtual-Inspection-Room" target="_blank">View Project</a>
+    <div id="ai" class="tab-content active">
+        <div class="project-card">
+            <h3>Color Matcher Using AI</h3>
+            <p>Built a tool using Gradio and Python to match dominant colors from images.</p>
         </div>
-
-        <!-- Project 2 -->
-        <div class="project">
-            <h3>Sula Wine Supply Chain</h3>
-            <p>Created a supply chain model for Sula wines, analyzing bottlenecks and improving efficiency.</p>
-            <a href="https://github.com/Yogita/Sula-Wine-SCM" target="_blank">View Project</a>
+        <div class="project-card">
+            <h3>Data Analysis Dashboard</h3>
+            <p>Created a dashboard using R and Excel to analyze and visualize business data.</p>
         </div>
+    </div>
 
-        <!-- Project 3 -->
-        <div class="project">
-            <h3>Data Dashboard</h3>
-            <p>Designed an interactive dashboard using R and Excel to visualize key performance indicators.</p>
-            <a href="https://github.com/Yogita/Data-Dashboard" target="_blank">View Project</a>
+    <div id="supply-chain" class="tab-content">
+        <div class="project-card">
+            <h3>Sula Wines Supply Chain</h3>
+            <p>Mapped supply chain of Sula wines, identified risks and mitigations.</p>
         </div>
-
-        <!-- Project 4 -->
-        <div class="project">
-            <h3>Lean Management (VSM)</h3>
-            <p>Reduced lead times by analyzing and optimizing the value stream using lean management tools.</p>
-            <a href="https://github.com/Yogita/Lean-Management" target="_blank">View Project</a>
+        <div class="project-card">
+            <h3>Virtual Inspection Room at Zudio</h3>
+            <p>Developing a system to track vendor quality inspections using cameras and MES.</p>
         </div>
-    </section>
+    </div>
 
-    <!-- Contact Section -->
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:yogitayogita17@gmail.com">yogitayogita17@gmail.com</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/yogitayogita17/" target="_blank">yogitayogita17</a></p>
-    </section>
+    <div id="fashion" class="tab-content">
+        <div class="project-card">
+            <h3>BOM + Tech Pack</h3>
+            <p>Created bill of materials and tech pack for apparel production.</p>
+        </div>
+        <div class="project-card">
+            <h3>Garment Specs</h3>
+            <p>Defined specifications for snap buttons, belts, and elastic for garment production.</p>
+        </div>
+    </div>
 
-    <!-- Footer -->
-    <footer>
-        <p>© 2025 Yogita. All rights reserved.</p>
-    </footer>
-</body>
-</html>
+    <div id="jugaad" class="tab-content">
+        <div class="project-card">
+            <h3>Waste Processing from Boutiques</h3>
+            <p>Explored how boutique waste is processed and reused by artisans and designers.</p>
+        </div>
+        <div class="project-card">
+            <h3>Sustainable Housing Design</h3>
+            <p>Designed affordable housing solution for lower-middle-class population of Delhi.</p>
+        </div>
+    </div>
+
+    <div id="erp" class="tab-content">
+        <div class="project-card">
+            <h3>Datatex ERP Implementation</h3>
+            <p>Studied and implemented Datatex ERP for inventory and production tracking.</p>
+        </div>
+        <div class="project-card">
+            <h3>Visual Management Tool</h3>
+            <p>Created a tool to monitor and manage textile testing lab operations.</p>
+        </div>
+    </div>
+
+    <div id="merch" class="tab-content">
+        <div class="project-card">
+            <h3>Sourcing + Costing</h3>
+            <p>Developed a sourcing and costing model for apparel products.</p>
+        </div>
+        <div class="project-card">
+            <h3>Merchandise Planning</h3>
+            <p>Planned merchandise process and trade analysis for a fashion retailer.</p>
+        </div>
+    </div>
+</section>
